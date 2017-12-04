@@ -1,6 +1,6 @@
 # jquery.step
 jQuery步骤条插件
-
+[demo](https://github.com/weirui88888/jquery.step/)
 
 ### 这是一个简易的jquery步骤条插件
 ![image](https://github.com/weirui88888/jquery.step/blob/master/images/demo.jpg)
