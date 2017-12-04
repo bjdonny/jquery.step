@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/jquery.step.css">
+</head>
+<body>
+    <div class="box clearfix">
+                <span class="line"></span>
+                <span class="lineGo"></span>
+                <div class="step">
+                        <div class="step-round">
+                             1
+                        </div>
+                        <div class="step-explain">
+                            <p>2017-09-20 12:12:12</p>
+                            <p>注册成功</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                         <div class="step-round">
+                             2
+                         </div>
+                         <div class="step-explain">
+                            <p>2017-09-20 12:34:12</p>
+                            <p>正在出库</p>
+                        </div>
+                     </div>
+                     <div class="step">
+                             <div class="step-round">
+                             3
+                             </div>
+                             <div class="step-explain">
+                                    <p>2017-09-20 12:50:12</p>
+                                    <p>确认收获</p>
+                            </div>
+                     </div>
+                      <div class="step">
+                            <div class="step-round">
+                            4
+                            </div>
+                            <div class="step-explain">
+                                   <p>2017-09-21 12:50:12</p>
+                                   <p>待评价</p>
+                           </div>
+                    </div>
+                     
+    </div>
+</body>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery.step.js"></script>
+<script>
+//     var settings = { validate: false, limit: 5, name: "foo" }; 
+//     var options = { validate: true, name: "bar" }; 
+//     jQuery.extend(settings, options);
+
+//     console.log(settings)
+//     //面试第一题
+//     var url = 'http://www.domain.com/?user=anonymous&id=123&id=456&city=%E5%8C%97%E4%BA%AC&enabled';
+
+//     var parmas = url.split("?")[1];
+//     var parmasArr = parmas.split("&");
+//     var obj = {};
+//     $(parmasArr).each((index,elem)=>{
+//         var key = elem.split("=")[0];
+//         var value = elem.split("=")[1]==undefined?true:elem.split("=")[1];
+        
+//          obj[key] = value;
+//     })
+//      console.log(obj)
+
+$(".box").step({
+    textAlign:"left",//textAlign为文字描述项的水平位置
+    direction: 'h'
+})
+
+ $(".box").toStep(3)
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.step{
+    /* padding: 20px; */
+    /* border: 1px solid black; */
+    /* width: 30%; */
+    float: left;
+}
+.box{
+    position: relative;
+    height: 30px;
+     padding:0 50px; 
+     margin-top:30px;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.step-round{
+    display: inline-block;;
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid black; */
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    position: relative;
+    background:#ccc;
+    color:#fff;
+    margin-bottom: 10px;
+    z-index: 100;
+}
+.step-round.hasRound{
+    background:green;
+}
+.line{
+    width: 0;
+    display: inline-block;
+    height: 6px;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    margin-top: -3px;
+}
+.lineGo{
+    width: 0;
+    display: inline-block;
+    height: 6px;
+    background: green;
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    margin-top: -3px;
+}
+.step-explain{
+    font-size: 12px;
+    display: none;
+}
+.colorGreen{
+    color:green;
+}
